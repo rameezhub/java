@@ -1,0 +1,40 @@
+package zakir.derivedCLASS;
+
+class animal {
+    String dog;
+    int x;
+
+    public String getdog() {
+        return dog;
+    }
+
+    public void setdog(String dog) {
+        System.out.println("set the dog name");
+        this.dog = dog;
+    }
+}
+    class  Derived  extends animal{
+          String cat;
+
+    public  String getcat(){
+        return cat;}
+    public void setcat(String cat){
+        System.out.println("set the cat  name");
+        this.cat=cat;
+    }
+    }
+public class derivedclass {
+    public static void main(String[] args) {
+        Derived a=new Derived();
+        animal b =new animal();
+        System.out.println("this is main class");
+        a.setcat("parth");
+        System.out.println( a.getcat());
+        System.out.println("this is derived class");
+       b.setdog("pro");
+        System.out.println(b.getdog());
+
+    }
+
+    }
+
