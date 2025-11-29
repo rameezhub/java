@@ -1,0 +1,19 @@
+package zakir;
+
+class tv implements tvremote {
+    public void off() {
+        System.out.println("the tv is off");
+    }
+
+    public void on() {
+        System.out.println("the tv is on");
+    }
+
+    public void turnon() {
+        System.out.println("the remote is on");
+    }
+
+    public void turnoff() {
+        System.out.println("the remote is off");
+    }
+}
