@@ -1,0 +1,51 @@
+package zakir;
+interface smarttv{
+     void on();
+     void off();
+}
+interface tvremote  extends   smarttv {
+    void turnon();
+    void turnoff();
+}
+class tv implements tvremote {
+    @Override
+    public void off() {
+        System.out.println("the tv is off");
+    }
+
+    @Override
+    public void on() {
+        System.out.println("the tv is on");
+    }
+
+    @Override
+    public void turnon() {
+        System.out.println("the remote is on");
+    }
+
+    @Override
+    public void turnoff() {
+        System.out.println("the remote is off");
+
+    }
+}
+class pub extends thepub{
+    void metr2(){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        // System.out.println(d);
+    }
+}
+
+public class interface2 {
+    public static void main(String[] args) {
+       tvremote c= new tv();
+        smarttv a=new tv();
+      c.turnoff();
+     a.off();
+     a.on();
+      pub d=new pub();
+      d.metr2();
+    }
+}
