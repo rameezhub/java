@@ -1,0 +1,21 @@
+import java.util.Scanner; // Import the Scanner tool to read input
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        // Create a Scanner object to read from the command line
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = input.nextInt(); // Read the first integer
+
+        System.out.print("Enter second number: ");
+        int num2 = input.nextInt(); // Read the second integer
+
+        int sum = num1 + num2; // Perform addition
+
+        System.out.println("The sum is: " + sum);
+        
+        // Close the scanner
+        input.close();
+    }
+}
